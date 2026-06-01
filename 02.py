@@ -1,0 +1,8 @@
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+soma = (n1+n2)
+if soma > 10: print("Resultado: ",soma)
+n3 = int(input("Digite o terceiro número qualquer: "))
+n4 = int(input("Digite o quarto número qualquer: "))
+soma2 = (n3+n4)
+if soma2 > 10: print("Resultado: ",soma2)
