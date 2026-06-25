@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<script> document.write("Hello World!");</script>
+<br>
+<p><img id="myimage" onclick="trocaImagem()"
+src="pic_bulboff.gif" width=100 height=180></p>
+<p>Clique na lâmpada para ligar/desligar a luz</p>
+<button type="button" onclick="mFuncao();"> Translate</button>
+<script>
+function trocaImagem() {
+var elemento=document.getElementById("myimage");
+if (elemento.src.match("bulbon")) {
+elemento.src="pic_bulboff.gif";
+} else {
+elemento.src="pic_bulbon_on.gif";
+}
+}
+
+</script>
+<button type="button" onclick="alert(
+'Bem vindo!')"> Clique Aqui!</button>
+<p id="paragrafo">hello!</p>
+<script>
+function mFuncao() {
+var x = document.getElementById("paragrafo");
+x.innerHTML="olá!";
+}
+</script>
+<input type=
+"text" id="v1"><br>
+<input type=
+"text" id="v2">
+<p id="res">Resposta: </p>
+<button type=
+"button" onclick="Soma(67)">Soma</button>
+</body>
+</html>
